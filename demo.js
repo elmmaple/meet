@@ -1,4 +1,4 @@
-$(document).ready(function () {
+﻿$(document).ready(function () {
     // alert('abc');
 	$(".load").fadeOut(1000);
     var url = "ajax/ajaxCard";
@@ -162,7 +162,7 @@ function refreshTable(data) {
         $("#cardtable").append(row);
     });
 }
-var http = "http://localhost:8080/Test1/";
+var http = "https://elmmaple.github.io/meet/";
 function author(){
 	var req= new XMLHttpRequest();
 	article.style.visibility="visible";
