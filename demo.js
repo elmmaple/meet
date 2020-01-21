@@ -1,6 +1,6 @@
 ﻿$(document).ready(function () {
     // alert('abc');
-	$(".load").fadeOut(1000);
+	$(".load").fadeOut(7000);
     var url = "ajax/ajaxCard";
     var ajaxobj = new AjaxObject(url, 'json');
     ajaxobj.getall();
