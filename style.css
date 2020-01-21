@@ -1,0 +1,125 @@
+@CHARSET "utf-8";
+.cell:nth-child(odd){
+	background-color:pink;
+}
+.cell:nth-child(even){
+	background-color:lightblue;
+}
+.cell:hover{
+	background-color:chartreuse;
+}
+tr:nth-child(1){
+	background-color:#DDDDDD;
+}
+table{
+	text-align:center;
+	font-family: 'Lobster', cursive;
+	font-weight:bold;
+	font-size:24px;
+}
+label{
+	font-family: 'Lobster', cursive;
+	font-weight:bold;
+	font-size:20px;
+}
+.modifybutton{
+	height:40px;
+	cursor: pointer;
+}
+.modifybutton:hover{
+	filter: invert(40%);
+}
+.deletebutton{
+	 height:40px;
+	 filter: invert(80%);
+	 cursor: pointer;
+}
+.deletebutton:hover{
+	filter:brightness(70%);
+}
+.load{
+	width:100%;
+	height:100vh;
+	position:fixed;
+	z-index:9999;
+	background-color:black;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	border:0px solid red;
+}
+.title{
+	font-size:50px;
+	text-align:center;
+	font-weight:bold;
+	font-family: 'Lobster', cursive;
+}
+
+.blink{
+  animation: blink-animation 14s steps(5, start) infinite;
+  -webkit-animation: blink-animation 14s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+	 0%{opacity: 1;color:red;}
+	14%{color:orangered;}
+	28%{color:yellow;}
+	42%{color:green;}
+	56%{color:blue;}
+	70%{color:mediumblue;}
+	84%{color:purple}
+}
+@-webkit-keyframes blink-animation {
+	0%{opacity: 0;}
+	50%{
+		opacity: .5;
+		color:red;
+	}
+	100%{opacity: 1;}
+}
+article{
+	width:100%;
+	visibility:hidden;
+	position:fixed;
+	top:30px;
+	display:flex;
+	z-index:2;	
+	/*align-items:center;*/
+	justify-content:center;
+	height:200px;
+	overflow:auto;
+}
+article ::-webkit-scrollbar {
+    display: none;
+}
+.intro{
+	/*height:550px;*/
+	/*position:absolute;*/
+	width:300px;
+	background-color: rgba(0,0,0,.67);
+	/*text-align:justify;*/
+	padding-left:50px;
+	padding-right:50px;
+	padding-top:20px;
+	padding-bottom:10px;
+	/*font-size:30px;*/
+	overflow:auto;
+	background-repeat:no-repeat;
+	z-index:9999;
+}
+.X {
+	color: white;
+	/*font-weight: bold;*/
+	font-size: 20px;
+	top:10px;
+	left:280px;
+	width: 20px;
+	height: 20px;
+	/*border: 2px outset;*/
+	/*border-radius: 50%;*/
+	line-height: 16px;
+	cursor: pointer;
+	display:none;
+	z-index:2;	
+	position:absolute;
+	
+}
